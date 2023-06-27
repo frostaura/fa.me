@@ -1,0 +1,153 @@
+:root{
+    --background-color: white;
+    --secondary-background-color: rgb(0, 50, 25);
+    --secondary-color: rgb(0, 185, 95);
+    --padding-default: 15px;
+}
+
+html, body{
+    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+header{
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-color);
+    padding: var(--padding-default);
+    display: flex;
+}
+
+    header > div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header div:first-of-type{
+        border-left: var(--padding-default) solid var(--secondary-color);
+        padding-left: var(--padding-default);
+    }
+
+    header a{
+        color: var(--secondary-color);
+        transition: 0.5s;
+    }
+
+    header a:hover{
+        color: var(--background-color);
+        transition: 0.5s;
+    }
+
+main, footer{
+    background-color: var(--background-color);
+    color: var(--secondary-background-color);
+    padding: var(--padding-default);
+}
+
+main{
+    display: flex;
+}
+
+main .work-experience li{
+    padding: var(--padding-default);
+    max-width: 600px;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    border: 5px solid var(--secondary-color);
+}
+
+.progress-container{
+    position: relative;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-background-color);
+    margin-bottom: 5px;
+    margin-left: 5px;
+    width: 250px;
+    height: 25px;
+}
+
+.progress{
+    height: 100%;
+    background-color: var(--secondary-color);
+}
+
+.with-progress li{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.experience-header{
+    color: var(--secondary-color);
+}
+
+    .experience-header > div{
+        display: inline-block;
+    }
+
+    .experience-block{
+        width: var(--padding-default);
+        height: var(--padding-default);
+        background-color: var(--secondary-color);
+    }
+
+.experience-body{
+    padding-left: calc(var(--padding-default) * 2);
+}
+
+.experience-body h2,
+.experience-body h3{
+    padding: 0;
+    margin: 0;
+}
+
+.experience-body a,
+.experience-body label{
+    color: var(--secondary-color);
+}
+
+.experience-time{
+    padding-left: var(--padding-default);
+}
+
+.experience-location{
+    float: right;
+}
+
+@media print {
+    html, body {
+        -webkit-print-color-adjust: exact;
+        font-size: 85%;
+    }
+
+    .progress-container{
+        width: 150px;
+        height: 15px;
+    }
+}
