@@ -4,7 +4,7 @@ A simple framework for a static Resume' website.
 ## Status
 | Project | Status | Platform
 | --- | --- | --- |
-| Me | [![Containerization Workflow](https://github.com/faGH/fa.me/actions/workflows/containerization_workflow.yml/badge.svg)](https://github.com/faGH/fa.me/actions/workflows/containerization_workflow.yml) | GitHub Actions
+| Me | [![Containerization Workflow](https://github.com/frostaura/fa.me/actions/workflows/containerization_workflow.yml/badge.svg)](https://github.com/frostaura/fa.me/actions/workflows/containerization_workflow.yml) | GitHub Actions
 
 ## Documentation
 | Content | Description
